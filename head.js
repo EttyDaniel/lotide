@@ -9,8 +9,3 @@ const head = function(array) {
     first = array[0];
   return first;
 };
-
-//Test
-assertEqual(head([]), 5);
-assertEqual(head([4]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
