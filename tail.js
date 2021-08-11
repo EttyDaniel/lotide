@@ -1,22 +1,14 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected)
-    console.log(`👍🏼 Assertion Passed: ${actual} === ${expected}`);
-  else {
-    console.log(`👎🏼 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
+//returns the array without the head (first element)
 const tail = function(array) {
   let newArray = [];
+  //if the array has more than one element we will return array starting from index = 1
   if (array.length >= 1) {
     newArray = array.slice(1);
   }
+  //if the array has one item or no items returns empty array
   return newArray;
 };
 
-//console.log(tail([4,5,6]));
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-let test = tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3);
-assertEqual(test[0],"Lighthouse");
-assertEqual(test[1],"Labs");
+module.exports = tail;
+
