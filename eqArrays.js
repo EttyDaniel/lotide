@@ -1,29 +1,19 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected)
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 const eqArrays = function(firstArray,secondArray) {
   let sameLength = (firstArray.length === secondArray.length);
-  let equal = false;
+  let equal = false;//assume not equal until proven otherwise
+  
   if (sameLength) {
-    equal = true;
     for (let i = 0; i < firstArray.length; i++) {
       equal = (firstArray[i] === secondArray[i]);
       if (!equal)
-        i = firstArray.length;
+        return false;
     }
-  } else
-    return sameLength;
-  return equal;
+  } else {//if it's not the same length they are not equal - no point going forward
+    return false;
+  }
+    
+  return true;//if I got this fur then firstArray === SecondArray
 };
 
-//test
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
-
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+module.exports = eqArrays;
