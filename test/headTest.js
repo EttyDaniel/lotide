@@ -9,7 +9,7 @@ describe('#head',() => {
   });
 
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5'); 
+    assert.strictEqual(head(['5']), '5');
   });
 
   it("returns 3 for [3,5,7,6]", () => {
