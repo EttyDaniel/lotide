@@ -35,4 +35,5 @@ const secondTry = findKey({
 }, y => y === "green");
 assertEqual(secondTry,"D");
 
+module.exports = findKey;
 

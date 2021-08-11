@@ -27,3 +27,6 @@ assertEqual(myStringCount["l"],2);
 assertEqual(myStringCount[" "],undefined);
 assertEqual(myStringCount["e"],1);
 assertEqual(myStringCount["E"],1);
+
+
+module.exports = countLetters;

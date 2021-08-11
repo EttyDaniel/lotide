@@ -61,3 +61,5 @@ assertObjectsEqual(objectC,objectB);
 // isEqual = eqObjects(objectA,objectC);
 // console.log(isEqual);
 //assertObjectsEqual(objectA,objectB);
+
+module.exports = assertObjectsEqual;

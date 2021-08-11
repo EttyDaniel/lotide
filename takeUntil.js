@@ -53,3 +53,5 @@ console.log("hello",results2);
 console.log('---');
 assertArraysEqual(results1,[1,2,5,7,2]);
 
+module.exports = takeUntil;
+
