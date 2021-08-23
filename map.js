@@ -37,6 +37,4 @@ const assertEqual = function(actual, expected) {
 
 const results1 = map(words, word => word[0]);
 assertArraysEqual(results1,['g','c','t','m','t']);
-//console.log(results1);
-
 module.exports = map;

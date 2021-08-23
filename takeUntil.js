@@ -30,13 +30,11 @@ const takeUntil = function(array, callback) {
   console.log("call");
   let results = [];
   for (let element of array) {
-    //console.log(element);
     if (!callback(element))
       results.push(element);
     else
       break;
   }
-  //console.log(results);
   return results;
 };
 

@@ -56,10 +56,6 @@ const objectC = {a: '1', b: '2'};
 assertObjectsEqual(objectA,objectB);
 assertObjectsEqual(objectA,objectC);
 assertObjectsEqual(objectC,objectB);
-// let isEqual = eqObjects(objectA,objectB);
-// console.log(isEqual);
-// isEqual = eqObjects(objectA,objectC);
-// console.log(isEqual);
-//assertObjectsEqual(objectA,objectB);
+
 
 module.exports = assertObjectsEqual;

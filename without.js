@@ -48,7 +48,6 @@ const without = function(source,itemsToRemove) {
   return newArray;
 
 };
-//console.log(without([1,2,3,2],[2,1]));
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
